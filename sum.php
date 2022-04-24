@@ -88,15 +88,16 @@ function sum(){
  function max_array($arr){
      $max_number = $arr[0];
      foreach($arr as $a){
-         if($max_number < $a){
+         if($a > $max_number){
              $max_number = $a;
          }
-         return $result;
      }
+         return $max_number;
      
- echo max_array(array(1,2,));  
+ }     
+ echo max_array(array(1,5,2));  
  echo "\n";
- }
+ 
  
  
  $text = '<p>test paragraph.</p><!-- Comment --> <a href="#fragment">Other text</a>';
